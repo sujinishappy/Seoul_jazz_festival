@@ -472,7 +472,7 @@ function setupPosition() {
         const value = i / animatedSlides.length;
         const angle = value * Math.PI * 2;
 
-        const x = Math.cos(angle - tweenObject.angle) * radius * 7.5/ 8;
+        const x = Math.cos(angle - tweenObject.angle) * radius * 8/ 8;
         const y = Math.sin(angle - tweenObject.angle) * radius + radius;
         gsap.set(slide, {x, y});
     }
