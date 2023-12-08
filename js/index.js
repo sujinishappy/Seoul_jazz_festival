@@ -63,8 +63,8 @@ $(document).ready(function () {
         var documentHeight = $(document).height();
 
         var threshold = 0.0;
-        var threshold3 = 0.12;
-        var threshold4 = 0.3;
+        var threshold3 = 0.08;
+        var threshold4 = 0.25;
         if (scrollPosition / documentHeight >= threshold) {
             $start.addClass("fixed");
             $start2.removeClass("animate__backOutUp");
@@ -462,7 +462,7 @@ function setupPosition() {
     const width = animatedSlides[0]
         .getBoundingClientRect()
         .width;
-    const padding = 250;
+    const padding = 300;
     circleLength = (width + padding) * animatedSlides.length;
     const radius = circleLength / (Math.PI * 2);
 
@@ -472,7 +472,7 @@ function setupPosition() {
         const value = i / animatedSlides.length;
         const angle = value * Math.PI * 2;
 
-        const x = Math.cos(angle - tweenObject.angle) * radius * 8/ 8;
+        const x = Math.cos(angle - tweenObject.angle) * radius * 7.5/ 8;
         const y = Math.sin(angle - tweenObject.angle) * radius + radius;
         gsap.set(slide, {x, y});
     }
