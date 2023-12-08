@@ -10,7 +10,7 @@
     mix-blend-mode: difference;
     transition: all 0.15s cubic-bezier(.07, .82, .17, 1);
     z-index: 9999;
-	cursur:none;
+cursor:none;
 }
 #topButton {
     display: none;
