@@ -135,7 +135,7 @@ body {
     animation: bg 10s ease infinite alternate;
     background-size: 500% 500%;
     overflow-x: hidden;
-    /*cursor: none;*/
+    cursor: none;
 }
 body.fade {
     opacity: 0;
