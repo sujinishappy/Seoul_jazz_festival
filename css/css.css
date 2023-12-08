@@ -536,7 +536,7 @@
 .third-box {
     position: sticky;
     width: 1vw;
-    height: 149.8vh;
+    height: 150vh;
     background: linear-gradient(to top, rgb(0, 0, 0,0.7), rgb(0, 0, 0,0.7),  rgb(0, 0, 0,0.7), rgb(0, 0, 0,0.7),rgb(0, 0, 0,0.7), rgb(0, 0, 0,0.7), rgb(0, 0, 0,0.7), rgb(0, 0, 0,0.7), rgb(0, 0, 0,0.7),rgb(0, 0, 0,0.5), rgb(0, 0, 0,0.3), rgba(255, 255, 255, 0));
     opacity: 0;
 }
@@ -743,7 +743,7 @@ li p {
     text-align: center;
 }
 .la_content .lsp{
-    transform: translate(0, 100px);
+    transform: translate(0, 140px);
     opacity: 0.5;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -752,7 +752,7 @@ li p {
 }
 @keyframes last{
     0%{
-        transform: translate(0, 100px);
+        transform: translate(0, 140px);
         opacity: 0.5;
     }
     100%{
