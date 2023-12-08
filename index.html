@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+        <title>seoul_jazz_festival</title>
+        <link rel="icon" type="image/x-icon" href="./img/logo.jpg">
+        <link href="./css/css.css" rel="stylesheet" type="text/css">
+        <link href="./css/common_css.css" rel="stylesheet" type="text/css">
+        <link href="./css/animation.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <div class="loader">
+            <div class="loading">
+                <h2> loading …</h2>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="hap"></span>
+            </div>
+        </div>
+        <div class="pointer"></div>
+        <button id="topButton" onclick="scrollToTop()">↑</button>
+        <section id="main-start">
+            <div id="blind" class="index">
+                <div class="blind_box 1"></div>
+                <div class="blind_box 2"></div>
+                <div class="blind_box 3"></div>
+                <div class="blind_box 4"></div>
+                <div class="blind_box 5"></div>
+                <div class="blind_box 6"></div>
+                <div class="blind_box 7"></div>
+                <div class="blind_box 8"></div>
+                <div class="blind_box 9"></div>
+                <div class="blind_box 10"></div>
+            </div>
+            <span class="start-text">
+                <div class="flower" id="fr1"></div>
+                <div class="flower" id="fr2"></div>
+                <div class="flower" id="fr3"></div>
+                <div class="flower" id="fr4"></div>
+                <div class="flower" id="fr5"></div>
+                <div class="flower" id="fr6"></div>
+                <p class="text1 mtop">
+                    SEOUL
+                </p>
+                <br/>
+                <p class="text2">JAZZ</p>
+                <br/>
+                <p class="text1">FESTIVAL</p>
+            </span>
+        </section>
+        <section id="start-content">
+            
+            <div id="content-set">
+                <div class="content mid">
+                    <h1>When</h1>
+                </div>
+                <div class="content right">
+                    <h1>Fri, May 26 - Sun, May 28</h1>
+                </div>
+            </div>
+            <div id="content-set2">
+                <div class="content mid">
+                    <h1>Where</h1>
+                </div>
+                <div class="content right">
+                    <h1>Olympic Park</h1>
+                </div>
+            </div>
+        </section>
+        <div class="main-content-1">
+            <div class="sticky">
+                <div class="sticky-background">
+                    Instrument
+                </div>
+                <div class="card-frame">
+                    <div class="card">
+                        <div class="front"><img src="./img/harmonica.png">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="front"><img src="./img/trumpet.png"></div>
+                    </div>
+                    <div class="card">
+                        <div class="front"><img src="./img/viloin.png"></div>
+                    </div>
+                    <div class="card">
+                        <div class="front"><img src="./img/guitar.png"></div>
+                    </div>
+                    <div class="card">
+                        <div class="front"><img src="./img/mic.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="second" class="hidden bgcolor">
+            
+
+            <div class="second_circle sc1"></div>
+            <div class="second_circle sc2"></div>
+            <div class="second_circle sc3"></div>
+            <div class="second_circle sc4"></div>
+            <div class="second_circle sc5"></div>
+
+            <div class="second_1">
+                <p> City's Rhythm
+                    <br/>
+                    Experience a special moment,
+                    <br>
+                    Seoul Jazz Festival
+                </p>
+            </div>
+            <div class="second_2">
+                <p>Free-spirited sounds
+                    <br/>
+                    breathtaking scenery
+                    <br/>
+                    and passionate jazz music.
+                </p>
+            </div>
+            <div class="second_3">
+                <p>This is
+                    <br/>
+                    a Midsummer night's musical extravaganza
+                    <br/><br/><br/>
+                    Comming Soon
+                </p>
+            </div>
+            <div class="second_4">
+                <div class="ball"></div>
+            </div>
+            <div class="second_5 ps-fix">
+
+                Welcome
+
+                <div class="second_10"></div>
+            </div>
+            <div class="movebox-all">
+
+                <div class="movebox" id="mb1"></div>
+                <div class="movebox" id="mb2"></div>
+                <div class="movebox" id="mb3"></div>
+                <div class="movebox" id="mb4"></div>
+                <div class="movebox" id="mb5"></div>
+                <div class="movebox" id="mb6"></div>
+                <div class="movebox" id="mb7"></div>
+                <div class="movebox" id="mb8"></div>
+                <div class="movebox" id="mb9"></div>
+                <div class="movebox" id="mb10"></div>
+                <div class="movebox" id="mb11"></div>
+                <div class="movebox" id="mb12"></div>
+                <!-- <div class="invert"> hello </div> -->
+            </div>
+
+        </div>
+    </section>
+    <section id="main_content">
+        <div id="content_left"></div>
+    </section>
+
+    <section id="main_slider">
+        <div id="third" class="sticky2">
+            <div class="third-box"></div>
+        </div>
+    </section>
+    <section id="card_ro">
+        <h1 id="card_ro2">LINEUP</h1>
+        <div id="cards" class="sticky2">
+            <div class="container3">
+                <ul class="list">
+                    <li class="list-item">
+                        <p class="modalP1">Sergio Mendes</p><a class="modal_open_btn" href="#openModal"><img src="./img/card1.jpg"></a></li>
+                    <li class="list-item">
+                        <p class="modalP1">MIKA</p><a class="modal_open_btn" href="#openModal"><img src="./img/card2.jpg"></a></li>
+                    <li class="list-item">
+                        <p class="modalP1">Damien Rice</p><a class="modal_open_btn" href="#openModal"><img src="./img/card3.jpg"></a></li>
+                    <li class="list-item">
+                        <p>Chris Botti</p><a class="modal_open_btn" href="#openModal"><img src="./img/card4.jpg"></a></li>
+                    <li class="list-item">
+                        <p>NEW JAWN</p><a class="modal_open_btn" href="#openModal"><img src="./img/card5.jpg"></a></li>
+                    <li class="list-item">
+                        <p>Gregory Porter</p><a class="modal_open_btn" href="#openModal"><img src="./img/card6.jpg"></a></li>
+                    <li class="list-item">
+                        <p>Justin Hurwitz Jazz</p><a class="modal_open_btn" href="#openModal"><img src="./img/card7.jpg"></a></li>
+                    <li class="list-item">
+                        <p>AJR</p><a class="modal_open_btn" href="#openModal"><img src="./img/card8.jpg"></a></li>
+                </ul>
+                <div class="circle"></div>
+                <button id="moveButton">Click to next</button>
+                <div id="openModal" class="modal">
+                    <div id="openModal2" class="modal-content">
+                        <button id="closeModal">
+                            x
+                        </button>
+                        <!-- 모달 내용 -->
+                        <p id="modalP">모달 내용의 초기 텍스트</p>
+                        <p id="modalP2">모달 내용의 초기 텍스트</p>
+                        <img src="" alt="Modal Image" id="modalImage">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
+    <!--모달 창-->
+    <section id="forth">
+        <div id="last">
+            <div class="la_circle"></div>
+            <div class="la_content rgt">
+                <p class="lsp">A captivating jazz realm</p>
+            </div>
+            <div class="la_content md">
+                <p class="lsp">A soulful beat</p>
+            </div>
+            <div class="la_content md">
+                <p class="lsp">Through diverse jazz genres</p>
+            </div>
+            <div class="la_content lf">
+                <p class="lsp">With artists</p>
+            </div>
+            <div class="la_content rgt">
+                <p class="lsp">And audience.</p> 
+            </div>
+            <div class="la_content rgt">
+                <p class="lsp">An unforgettable moment</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        <div class="copy">COPYRIGHT 2023 — Nam su jin</div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>

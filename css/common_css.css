@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'PlayfairDisplay-Black';
+    src: url("../img/PlayfairDisplaySC-Black.ttf");
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url("../img/PlayfairDisplaySC-Bold.ttf");
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url("../img/PlayfairDisplaySC-Regular.ttf");
+}
+@font-face {
+    font-family: 'Sage';
+    src: url("../img/sage-webfont.ttf");
+}
+@font-face {
+    font-family: 'Dynalight-Regular';
+    src: url("../img/Dynalight-Regular.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'PlayfairDisplay-Bold';
+    font-size: 100%;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: 9999;
+    opacity: 1;
+    transition: 0.5s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+.hidden2 {
+    display: none;
+}
+.no-scroll {
+    overflow: hidden;
+}
+.loading {
+    text-align: center;
+}
+.loading h2 {
+    color: black;
+    font-size: calc(100vw * 32/ 1920);
+}
+.loading span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1em;
+    height: 1em;
+    margin: 0.5em;
+    background: #007DB6;
+    border-radius: 50%;
+    animation: loading 1s infinite alternate;
+}
+/*
+   * Dots Colors
+   * Smarter targeting vs nth-of-type?
+   */
+.loading span:nth-of-type(2) {
+    background: #008FB2;
+    animation-delay: 0.2s;
+}
+.loading span:nth-of-type(3) {
+    background: #009B9E;
+    animation-delay: 0.4s;
+}
+.loading span:nth-of-type(4) {
+    background: #00A77D;
+    animation-delay: 0.6s;
+}
+@keyframes loadings{
+    0%{
+        background: #00A77D;
+    scale: 1;
+    }
+    70%{
+        background: #00A77D;
+        scale: 1;
+    }
+    100%{
+        background: black;
+        scale: 200;
+    }
+}
+.loading span:nth-of-type(5) {
+    background: #00B247;
+    animation-delay: 0.8s;
+}
+.loading span:nth-of-type(6) {
+    background: #5AB027;
+    animation-delay: 1.0s;
+}
+.loading span:nth-of-type(7) {
+    background: #A0B61E;
+    animation-delay: 1.2s;
+    animation: loadings 4s ease forwards;
+}
+
+/*
+   * Animation keyframes
+   * Use transition opacity instead of keyframes?
+   */
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(45deg, #431a75, #431a75, #df159f, #d12662, #d12662, #8b42d9, rgb(58, 2, 128), #d12662, #d12662, #d9425e, rgb(217, 66, 169), rgb(201, 0, 137), #fe6f3f, rgb(217, 66, 169), rgb(201, 0, 137));
+    animation: bg 10s ease infinite alternate;
+    background-size: 500% 500%;
+    overflow-x: hidden;
+    /*cursor: none;*/
+}
+body.fade {
+    opacity: 0;
+}
+body::-webkit-scrollbar {
+    width: .6vw;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #df159f;
+    border-radius: 4px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #ffffff00;
+}
+@keyframes bg {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.733);
+    color: rgb(211, 209, 218);
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+}
+.copy{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2vw;
+    font-weight: 600;
+}
