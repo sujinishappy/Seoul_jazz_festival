@@ -1,3 +1,13 @@
+/*!
+ * GSAP - GreenSock Animation Platform
+ * Version x.x.x
+ * https://greensock.com
+ * 
+ * Copyright (c) 2008-2021 GreenSock. All rights reserved.
+ * 
+ * This work is subject to the terms of the MIT license.
+ * https://opensource.org/licenses/MIT
+ */
 // document.addEventListener('DOMContentLoaded', () => {   window.setTimeout(()
 // => {     document.body.classList.remove('fade');   }); }); 마우스 커서 원 따라오는 스크립트
 const $cursor = document.querySelector('.pointer');
