@@ -21,10 +21,10 @@
     font-size: 40px;
     color: #ffffffd2;
     border: none;
-    border-radius: 5px;
+    border-radius: 4.5px;
     padding: 10px;
     cursor: pointer;
-    height: 12vh;
+    height: 13vh;
     width: 2.6vw;
     z-index: 99;
     mix-blend-mode: darken;
