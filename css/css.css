@@ -667,10 +667,10 @@ li p {
     user-select: none;
     font-weight: lighter;
     cursor: pointer;
-    transition:all 1s ease;
+    transition:all .5s ease;
 }
 #moveButton:hover{
-	transition:all 1s ease;
+	transition:all .5s ease;
 	background: rgba(255, 255, 255, 0.1);
 }
 /*modal*/
