@@ -27,6 +27,14 @@
     font-family: 'PlayfairDisplay-Bold';
     font-size: 100%;
 }
+::selection {
+    background-color: #2c191c7c; 
+    color: #fff;
+}
+::-moz-selection {
+    background-color: #2c191c7c;
+    color: #fff;
+}
 
 .loader {
     position: fixed;
