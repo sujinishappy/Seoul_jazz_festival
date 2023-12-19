@@ -647,9 +647,9 @@ li p {
     width: 92vw;
     height: 86vw;
     border-radius: 50%;
-    border: 4px solid;
-    border-image: linear-gradient(to bottom, rgba(255, 255, 255, .6), rgba(255, 255, 255, 0));
-    border-image-slice: 1;
+    border: 4px solid  rgba(255, 255, 255, .6);
+    /*border-image: linear-gradient(to bottom, rgba(255, 255, 255, .6), rgba(255, 255, 255, 0));
+    border-image-slice: 1;*/
     animation: spark 1.5s ease infinite alternate-reverse;
 }
 /**/
